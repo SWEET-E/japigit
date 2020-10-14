@@ -1,0 +1,112 @@
+{
+    "Global Quote": {
+        "01. symbol": "GOOG",
+        "02. open": "1583.7300",
+        "03. high": "1590.0000",
+        "04. low": "1563.2000",
+        "05. price": "1571.6800",
+        "06. volume": "1590828",
+        "07. latest trading day": "2020-10-13",
+        "08. previous close": "1569.1500",
+        "09. change": "2.5300",
+        "10. change percent": "0.1612%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "MSFT",
+        "02. open": "222.7200",
+        "03. high": "225.2100",
+        "04. low": "220.4300",
+        "05. price": "222.8600",
+        "06. volume": "28708274",
+        "07. latest trading day": "2020-10-13",
+        "08. previous close": "221.4000",
+        "09. change": "1.4600",
+        "10. change percent": "0.6594%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "AAPL",
+        "02. open": "125.2700",
+        "03. high": "125.3900",
+        "04. low": "119.6500",
+        "05. price": "121.1000",
+        "06. volume": "260497701",
+        "07. latest trading day": "2020-10-13",
+        "08. previous close": "124.4000",
+        "09. change": "-3.3000",
+        "10. change percent": "-2.6527%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "AMD",
+        "02. open": "84.8600",
+        "03. high": "86.0900",
+        "04. low": "83.9733",
+        "05. price": "85.2800",
+        "06. volume": "42644010",
+        "07. latest trading day": "2020-10-13",
+        "08. previous close": "84.2900",
+        "09. change": "0.9900",
+        "10. change percent": "1.1745%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "TSLA",
+        "02. open": "443.3500",
+        "03. high": "448.8900",
+        "04. low": "436.6000",
+        "05. price": "446.6500",
+        "06. volume": "34105343",
+        "07. latest trading day": "2020-10-13",
+        "08. previous close": "442.3000",
+        "09. change": "4.3500",
+        "10. change percent": "0.9835%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "CIDM",
+        "02. open": "0.5860",
+        "03. high": "0.5940",
+        "04. low": "0.5750",
+        "05. price": "0.5850",
+        "06. volume": "652247",
+        "07. latest trading day": "2020-10-14",
+        "08. previous close": "0.5860",
+        "09. change": "-0.0010",
+        "10. change percent": "-0.1706%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "GOOG",
+        "02. open": "1578.5900",
+        "03. high": "1587.6841",
+        "04. low": "1550.5300",
+        "05. price": "1568.0800",
+        "06. volume": "1927514",
+        "07. latest trading day": "2020-10-14",
+        "08. previous close": "1571.6800",
+        "09. change": "-3.6000",
+        "10. change percent": "-0.2291%"
+    }
+}
+{
+    "Global Quote": {
+        "01. symbol": "GOOG",
+        "02. open": "1578.5900",
+        "03. high": "1587.6841",
+        "04. low": "1550.5300",
+        "05. price": "1568.0800",
+        "06. volume": "1927531",
+        "07. latest trading day": "2020-10-14",
+        "08. previous close": "1571.6800",
+        "09. change": "-3.6000",
+        "10. change percent": "-0.2291%"
+    }
+}

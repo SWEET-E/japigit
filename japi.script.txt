@@ -1,0 +1,272 @@
+C:\>cd c:\japi.git
+
+c:\japi.git> git init
+Initialized empty Git repository in C:/japi.git/.git/
+
+c:\japi.git>git config--global user.name "Evan Dieterich"
+git: 'config--global' is not a git command. See 'git --help'.
+
+c:\japi.git>git config --global user.name "Evan Dieterich"
+
+c:\japi.git>git config --global user.email ebdieter@asu.edu
+
+c:\japi.git>git add japi.py
+fatal: pathspec 'japi.py' did not match any files
+
+c:\japi.git>git add japi.py
+
+c:\japi.git>git add japi.out
+
+c:\japi.git>git commit -m "committing japi.py & japi.out"
+[master (root-commit) a829dfe] committing japi.py & japi.out
+ 2 files changed, 103 insertions(+)
+ create mode 100644 japi.out
+ create mode 100644 japi.py
+
+c:\japi.git>git commit -am "new commit after modifying japi.py command"
+On branch master
+nothing to commit, working tree clean
+
+c:\japi.git>git status -s
+
+c:\japi.git>git status
+On branch master
+nothing to commit, working tree clean
+
+c:\japi.git>echo "hello there">hello.txt
+
+c:\japi.git>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c:\japi.git>git status -s
+?? hello.txt
+
+c:\japi.git>git add hello.txt
+
+c:\japi.git>git status -s
+A  hello.txt
+
+c:\japi.git>echo "We are tesing for git status">>hello.txt
+
+c:\japi.git>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+
+c:\japi.git>git diff
+diff --git a/hello.txt b/hello.txt
+index 1cea4bc..8805133 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1 +1,2 @@
+ "hello there"
++"We are tesing for git status"
+
+c:\japi.git>git commit -m "committing hello.txt changes"
+[master 85d6999] committing hello.txt changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+c:\japi.git>git add hello.txt
+
+c:\japi.git>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.txt
+
+
+c:\japi.git>git log
+commit 85d69993c549488695994e53680c5d2029d9259e (HEAD -> master)
+Author: Evan Dieterich <ebdieter@asu.edu>
+Date:   Wed Oct 14 14:12:58 2020 -0700
+
+    committing hello.txt changes
+
+commit a829dfe9be6b82cdb3419db22b39fb66cb6dbda9
+Author: Evan Dieterich <ebdieter@asu.edu>
+Date:   Wed Oct 14 13:46:05 2020 -0700
+
+    committing japi.py & japi.out
+
+c:\japi.git>git status -s
+M  hello.txt
+
+c:\japi.git>git branch
+* master
+
+c:\japi.git>echo "master version">>hello.txt
+
+c:\japi.git>git commit -am "master version"
+[master 85884d9] master version
+ 1 file changed, 2 insertions(+)
+
+c:\japi.git>git branch feature
+
+c:\japi.git>git branch
+  feature
+* master
+
+c:\japi.git>git checkout feature
+Switched to branch 'feature'
+
+c:\japi.git>git branch
+* feature
+  master
+
+c:\japi.git>echo "new file">hello_feature
+
+c:\japi.git>echo "feature version">>hello.txt
+
+c:\japi.git>git add hello.txt
+
+c:\japi.git>git add hello_feature
+
+c:\japi.git>git commit -m"feature version"
+[feature 86f9086] feature version
+ 2 files changed, 2 insertions(+)
+ create mode 100644 hello_feature
+
+c:\japi.git>git checkout master
+Switched to branch 'master'
+
+c:\japi.git>git branch
+  feature
+* master
+
+c:\japi.git>echo "initial commit">merge.txt
+
+c:\japi.git>git add merge.txt
+
+c:\japi.git>git commit -m"adding new file on master"
+[master 5b2c19d] adding new file on master
+ 1 file changed, 1 insertion(+)
+ create mode 100644 merge.txt
+
+c:\japi.git>git branch newbranch
+
+c:\japi.git>echo "Update on master">merge.txt
+
+c:\japi.git>git add merge.txt
+
+c:\japi.git>git commit -m"update on master"
+[master 9e22b2d] update on master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c:\japi.git>git checkout newbranch
+Switched to branch 'newbranch'
+
+c:\japi.git>echo "update on new branch">merge.txt
+
+c:\japi.git>git commit -am"update on newbranch"
+[newbranch aaf2d62] update on newbranch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c:\japi.git>git checkout master
+Switched to branch 'master'
+
+c:\japi.git>git merge newbranch
+Auto-merging merge.txt
+CONFLICT (content): Merge conflict in merge.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+c:\japi.git>cat merge.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\japi.git>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   merge.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c:\japi.git>cat merge.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\japi.git>echo "merged version">merge.txt
+
+c:\japi.git>git add merge.txt
+
+c:\japi.git>git commit -m"Fixed conflicts"
+[master 3b53470] Fixed conflicts
+
+c:\japi.git>git status
+On branch master
+nothing to commit, working tree clean
+
+c:\japi.git>git branch -d newbranch
+Deleted branch newbranch (was aaf2d62).
+
+c:\japi.git>echo "file to delete">to_delete.txt
+
+c:\japi.git>git add to_delete.txt
+
+c:\japi.git>git commit -m"yet another file"
+[master f6e8355] yet another file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 to_delete.txt
+
+c:\japi.git>git rm to_delete.txt
+rm 'to_delete.txt'
+
+c:\japi.git>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    to_delete.txt
+
+
+c:\japi.git>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\japi.git>git reset --hard HEAD
+HEAD is now at f6e8355 yet another file
+
+c:\japi.git>git status
+On branch master
+nothing to commit, working tree clean
+
+c:\japi.git>git rm to_delete.txt
+rm 'to_delete.txt'
+
+c:\japi.git>git status -sb
+## master
+D  to_delete.txt
+
+c:\japi.git>git commit -m "file deletion"
+[master bfdebba] file deletion
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 to_delete.txt
+
+c:\japi.git>
+
+
+
+
+
+
+
+
+
+
+
